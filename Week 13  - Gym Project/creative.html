@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="NavBar3.css">
+    <!--<link rel="stylesheet" href="main.css">-->
+    <link rel="stylesheet" href="index.css">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--<script src="Membership.js" defer></script>-->
+    <script src="Membership2.js" defer></script>
+    <link rel="stylesheet" href="creative.css">
+    <!-- Adding google maps-->
+    <script src="creative.js" defer></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="footer.css">
+</head>
+<body>
+    <hr>
+    <header class="header-main">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="Membership.html" class="split">Membership</a>
+            <a href="creative.html" class="split">Creative</a>
+            <a href="#about" class="split">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i><!-- icons Responsive icon design -->
+            </a>
+        </div>
+    </header>
+    <h1>Location search</h1>
+    <!--The div element for the map -->
+    <div id="map"> 
+        <script>
+            function initMap(){
+                var location = {lat: 40.63480, lng: -73};
+                var map = new google.maps.Map(document.getElementById("map"),{
+                    zoom: 4,
+                    center: location
+                });
+                var marker = new google.maps.Marker({
+                    position: location,
+                    map: map
+             });
+            }
+        </script>
+    </div> 
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=
+    AIzaSyC_pQv7MqN_L2l_V98X-JhLQWXFyYze0XI&callback=initMap"></script>
+    <footer>
+            <div class="footer-col">
+                <h4>Fitness</h4>
+                <ul>
+                    <li><a href="#">Group Fitness</a></li>
+                    <li><a href="#">Training</a></li>
+                    <li><a href="#">Cardio</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Learn</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Business</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Help</h4>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Club Policies</a></li>
+                </ul>
+            </div>
+    </footer>
+</body>
+</html>

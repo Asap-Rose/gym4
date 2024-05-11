@@ -1,0 +1,107 @@
+
+body {
+    background-color: #1e1e1e; 
+}
+
+a {
+     font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    font-family: "Space Mono", monospace;
+    cursor: pointer;
+}
+
+.header-main {
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex; /* apply a flex box */
+    justify-content: space-between;/* Sets the flex to space-between */
+}
+
+/* class for my logo*/
+.header-main-logo {
+    width: fit-content;/* Sets the image to the container size automatically if the logo or image is too big for the container.*/
+    /*width: 120px; 120 pixels woide*/
+    height: 100%;/* 100% of the header's height*/
+    /* background-color: #ffff00; To know where the logo is */
+    padding-left: 60px; /* gives some padding between the logo and the text links */
+    display: flex;
+}
+
+.header-main-logo img{
+    height: 60px;
+    align-self: center;/* Centers the logo*/
+}
+
+.header-main-nav {
+    /*width: 120px; 120 pixels woide*/
+    width: fit-content;
+    height: 100%;/* 100% of the header's height*/
+    /*background-color: orange; /* To know where the logo is */
+
+}
+
+.header-main-nav ul {
+    /* list-style: none you dont need to do this you have a reset style sheet */
+    list-style: none;
+    /* creates space on the left side */
+    margin-left: 30px;
+}
+
+.header-main-nav ul li{
+    /* list-style: none you dont need to do this you have a reset style sheet */
+    display: inline;/* lays out the text elements horizontally*/
+    list-style: none;/* takes the list decorations off  */
+    float: left;/* Squishes the elements together */
+    /*margin-right: 10px;/* this is a way to space out the elements. */
+}
+
+.header-main-nav ul li a{
+    /* list-style: none you dont need to do this you have a reset style sheet */
+    list-style: none;
+    padding: 0 10px;/* A way to space the elements*/
+    font-family: "Space Mono", monospace; /* imported font-family*/
+    line-height: 60px; /* centers the link text manually*/
+    color: rgb(82,90,120);
+    display: block; /* Text becomes a block level element */
+    height: 100%;
+
+}
+
+.header-main nav ul li a {
+    align-items:flex-start;
+}
+
+.header-main-nav ul li a:hover {
+    color: #ffb4a2; /* Changes the color of the text links*/
+}
+
+/* header */
+.header-main-sm{
+    width: 120px;/* 120 pixels woide*/
+    height: 100%;/* 100% of the header's height*/
+   /* background-color: red; /* To know where the logo is */
+    padding-right: 60px;/* Sets some padding for the social media icons*/
+    display: flex; /* the social media container to flex-box */
+    align-items: center; /* centers the icons within the social media section */
+    column-gap: 20px; /* Adds a gap between the social media icons */
+}
+
+/* header facebook icons */
+.header-main-sm-fb {
+    width: 20px;
+    height: 20px;
+    background-image: url(icons/facebook_icon.png);/* Sets the facebook icon*/
+    background-repeat: no-repeat; /* stops the icon from repeating */
+    background-size: cover; /* cover the entire container */
+}
+
+/* header instagram icons */
+.header-main-sm-in {
+    width: 20px;
+    height: 20px;
+    background-image: url(icons/instagram_icon.png); /* Sets the instagram icon*/
+    background-size: cover; /* cover the entire container */
+
+}

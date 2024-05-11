@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="NavBar3.css">
+    <!--<link rel="stylesheet" href="main.css">-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- <link rel="stylesheet" href="membership.css">-->
+    <!--<script src="Membership3.js" defer></script>-->
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+    <hr>
+    <header class="header-main">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="Membership.html" class="split">Membership</a>
+            <a href="creative.html" class="split">Creative</a>
+            <a href="#about" class="split">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i><!-- icons Responsive icon design -->
+            </a>
+        </div>
+    </header>
+    <h1>REGISTRATION FORM</h1>
+        <form
+            name="RegForm"
+            onsubmit="return validateForm()"
+        >
+            <p>
+                <label for="Fname">First Name:</label>
+                <input type="text" id="Fname" name="Name" placeholder="Enter your First name">
+                <span id="name-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="Lname">Last Name:</label>
+                <input type="text" id="Lname" name="LName" placeholder="Enter your Last name properly">
+                <span id="Lname-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="Address" placeholder="Enter your address">
+                <span id="address-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your City">
+                <span id="city-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="subject">Select Your State:</label>
+                <select id="subject" name="Subject">
+                    <option value="">Select State</option>
+                    <option value="ALABAMA">AL</option>
+                    <option value="ALASKA">AK</option>
+                    <option value="AMERICAN SAMOA">AS</option>
+                    <option value="ARIZONA">AZ</option>
+                    <option value="ARKANSAS">AR</option>
+                    <option value="CALIFORNIA">CA</option>
+                    <option value="COLORADO">CO</option>
+                    <option value="CONNECTICUT">CT</option>
+                    <option value="DELAWARE">DE</option>
+                    <option value="DISTRICT OF COLUMBIA">DC</option>
+                    <option value="FLORIDA">FL</option>
+                    <option value="GEORGIA">GA</option>
+                    <option value="GUAM">GU</option>
+                    <option value="HAWAII">HI</option>
+                    <option value="IDAHO">ID</option>
+                    <option value="ILLINOIS">IL</option>
+                    <option value="INDIANA">IN</option>
+                    <option value="IOWA">IA</option>
+                    <option value="KANSAS">KS</option>
+                    <option value="KENTUCKY">KY</option>
+                    <option value="LOUISIANA">LA</option>
+                    <option value="MAINE">ME</option>
+                    <option value="MARYLAND">MD</option>
+                    <option value="MASSACHUSETTS">MA</option>
+                    <option value="MICHIGAN">MI</option>
+                    <option value="MINNESOTA">MIN</option>
+                    <option value="MICHIGAN">MS</option>
+                    <option value="MISSISSIPPI">MO</option>
+                    <option value="MISSOURI">MI</option>
+                    <option value="MICHIGAN">MI</option>
+                    <option value="MONTANA">MT</option>
+                    <option value="NEBRASKA">NE</option>
+                    <option value="NEVADA">NV</option>
+                    <option value="NEW HAMPSHIRE">NH</option>
+                    <option value="NEW JERSEY">NJ</option>
+                    <option value="NEW MEXICO">NM</option>
+                    <option value="NEW YORK">NY</option>
+                    <option value="NORTH CAROLINA">NC</option>
+                    <option value="NORTHERN MARIANA IS">MP</option>
+                    <option value="OHIO">OH</option>
+                    <option value="OKLAHOMA">OK</option>
+                    <option value="OREGON">OR</option>
+                    <option value="PENNSYLVANIA">PA</option>
+                    <option value="PUERTO RICO">PR</option>
+                    <option value="RHODE ISLAND">RI</option>
+                    <option value="NORTH DAKOTA">ND</option>
+                    <option value="SOUTH CAROLINA">SC</option>
+                    <option value="SOUTH DAKOTA">SD</option>
+                    <option value="TEXAS">TX</option>
+                    <option value="UTAH">UT</option>
+                    <option value="VERMONT">TN</option>
+                    <option value="VIRGINIA">VA</option>
+                    <option value="VIRGIN ISLANDS">VI</option>
+                    <option value="WASHINGTON">WA</option>
+                    <option value="WEST VIRGINIA">WV</option>
+                    <option value="WISCONSIN">WI</option>
+                    <option value="WYOMING">WY</option>
+                </select>
+                <span id="subject-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="email">E-mail Address:</label>
+                <input type="text" id="email" name="Email" placeholder="Enter your email">
+                <span id="email-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="Phone">Phone number</label>
+                <input type="text" id="phone" name="Phone" placeholder="Enter your Phone number">
+                <span id="phone-error" class="phone-message"></span>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="Password">
+                <span id="password-error" class="error-message"></span>
+            </p>
+            <p>
+                <label for="comment">Comments:</label>
+                <textarea id="comment" name="Comment"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="agree" name="Agree">
+                <label for="agree">I agree to the above information</label>
+                <span id="agree-error" class="error-message"></span>
+            </p>
+            <p>
+                <input type="submit" value="Send" name="Submit">
+                <input type="reset" value="Reset" name="Reset">
+            </p>
+        </form>
+    <footer class="foot">
+        <div class="footer-col">
+            <h4>Fitness</h4>
+            <ul>
+                <li><a href="#">group fitness</a></li>
+                <li><a href="#">training</a></li>
+                <li><a href="#">cardio</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Learn</h4>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">business</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>help</h4>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Club Policies</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

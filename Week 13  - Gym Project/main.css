@@ -1,0 +1,42 @@
+:root {
+    --site-color-01:#c13585;
+    --site-color-01: #9e2f6e;
+}
+div.home_banner{
+    background-color: aquamarine;
+    height: 500px;
+    width: 100%;
+    border: solid;
+}
+
+
+h1{
+    color: #fff;
+    
+    font-size: 26px;
+    line-height: 32px;
+    font-family: "Space Mono", monospace;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+p{
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: "Space Mono", monospace;
+}
+a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    font-family: "Space Mono", monospace;
+    cursor: pointer;
+}
+
+
+button {
+    font-size: 25px;
+    color: blue;
+}

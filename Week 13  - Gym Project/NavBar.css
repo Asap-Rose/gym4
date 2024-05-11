@@ -1,0 +1,71 @@
+/* import the font for the navbar*/
+body {
+    /* Remember that you have to go to the classes section in google fonts to get the settings to change */
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal
+}
+ul{
+    list-style-type: none; /* sets the marker character */
+    margin: 0; /* The space around the elements border.takes away space from the top */
+    padding: 0;  /*area around the content. Setting the padding to 0 gets rid of the default padding.takes away about 30px of space from the left */
+    overflow: hidden;/* overflow controls what happens to content thta is to big to fint into an area */
+    background-color: white;
+    /*background-color: #FAF9F6; Sets the background color for all elements in the unordered list/navbar */
+    position: fixed;/* specifies the type of positioning method used for an element */
+    top: 0; /* IMPORTANT sets the vertical position of a positioned element.positions the contents at the very top bordering the padding */
+    width: 100%;
+    border-style: inset;
+    
+    /*height: ;*/
+}   
+
+li {
+    float: left; /*(positions the list elements horizontally) list elements are floated to the left*/
+}
+
+li a {
+    display: block; /* most important for controlling layout*/
+    color: #525d78;  /*sets the color to off-white */
+    text-align: center; /* aligns the text to the center */
+    padding: 14px 16px; /* padding for the list anchor links within the ul*/
+    text-decoration: none; /* takes of the text decoration */
+    line-height: 32px;
+    font-size: 1em;
+    
+     
+}
+
+li a.about_us {
+    
+    margin-left:600px;
+    background-color: bisque;
+    
+    
+}
+
+li a.sign-up {
+    margin-left:0px;
+}
+
+li a.creative_page{
+    margin-left: 0px;
+}
+
+li a:hover{
+   /* background-color: #2F3B22;*/
+     color: #de97a4;
+     text-decoration: underline;
+
+     /*text-transform: lowercase; this works */
+}
+
+.Logo {
+    width: 100px;
+    height: 150;
+    
+    
+}
+
+
+
